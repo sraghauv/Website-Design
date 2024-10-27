@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Logo from "/Users/raghauvsaravanan/Documents/NeuroTECH/Interface/Website Design/src/assets/Picture1.png";
+import Logo from "/src/assets/Picture1.png";
 
 const Navbar = () => {
   return (
