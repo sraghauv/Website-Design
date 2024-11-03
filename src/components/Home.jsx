@@ -12,10 +12,10 @@ const Home = () => {
         alt="Aesthetic overview"
       /> */}
         <div className="ml-28 mr-28 mb-10">
-          <h1 className="text-4xl font-bold bg-[#FFF8D6] text-[#BF5801] mb-4 rounded-2xl p-3">
+          <h1 className="text-4xl font-bold bg-secondary text-primary mb-4 rounded-2xl p-3">
             Welcome to Home Page
           </h1>
-          <p className="text-lg bg-[#FFF0C2] text-[#BF5801] p-3 rounded-2xl">
+          <p className="text-lg bg-tertiary p-3 rounded-2xl">
             Welcome to Longhorn Neurotech, a student organization with a
             singular focus: facilitating your entry into the world of neural
             engineering. Our purpose is to provide you with the knowledge,
