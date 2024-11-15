@@ -17,18 +17,18 @@ const Event = ({ event }) => {
 
     return (
         <div className="event-card border p-4 rounded-xl shadow-sm bg-white mb-1">
-        <img 
-            src={image || placeholderImage} 
-            alt={`${name} image`} 
-            className="event-image w-full h-40 object-cover rounded mb-4" 
-        />
-        <div>
-            <h2 className="text-2xl font-bold mb-2">{name}</h2>
-            <p className="mb-2 text-base">{details}</p>
-            <p className="text-lg"><strong>Date:</strong> {new Date(date).toLocaleDateString()}</p>
-            {location && <p className="text-lg"><strong>Location:</strong> {location}</p>} {/* Only display location if provided */}
-            <span className="event-type badge bg-primary mt-4 text-base">{type}</span>
-        </div>
+            <img 
+                src={image || placeholderImage} 
+                alt={`${name} image`} 
+                className="event-image w-full h-50 object-contain rounded mb-4" 
+            />
+            <div>
+                <h2 className="text-2xl font-bold mb-2">{name}</h2>
+                <p className="mb-2 text-base">{details}</p>
+                <p className="text-lg"><strong>Date:</strong> {new Date(date).toLocaleDateString()}</p>
+                {location && <p className="text-lg"><strong>Location:</strong> {location}</p>} {/* Only display location if provided */}
+                <span className="event-type badge bg-primary mt-4 text-base">{type}</span>
+            </div>
         </div>
     );
 };

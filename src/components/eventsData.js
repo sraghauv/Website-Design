@@ -27,64 +27,15 @@
 */
 
 const eventsData = [
+
     {
         id: 1,
-        name: "Sample Event 1",
-        date: new Date("2024-04-15"),
-        location: "UT Austin Main Lawn",
-        details: `First social event happening!`,
-        type: `Social Event`,
-        image: "",
-    },
-
-    {
-        id: 2,
-        name: "Sample Event 2",
-        date: new Date("2024-04-20"),
-        location: "BME 3.102",
-        details: `First general meeting event happening!`,
+        name: "General Meeting Featuring Dr. Jose Del R. Milan",
+        date: new Date("2024-10-21"),
+        location: "Burdine Hall 108",
+        details: `Synapse will be hosting Dr. Jose del R Millan tomorrow! He’ll be giving a talk from 6-7PM in BUR 108 on his journey and his work in the exciting field of Brain Computing Interface! All are welcome, no RSVP or anything. Our very own Tony Chae will also host our Journal Club presentation.`,
         type: `General Meeting`,
-        image: "",
-    },
-
-    {
-        id: 3,
-        name: "Sample Event 3",
-        date: new Date("2024-04-26"),
-        location: "UT Austin Main Lawn",
-        details: `Second social event happening!`,
-        type: `Social Event`,
-        image: "", 
-    },
-
-    {
-        id: 4,
-        name: "Sample Event 4",
-        date: new Date("2024-05-01"),
-        location: "FAC 21",
-        details: `First guest speaker talk of the semester!`,
-        type: `Guest Speaker Talk`,
-        image: "",
-    },
-
-    {
-        id: 5,
-        name: "Sample Event 5",
-        date: new Date("2024-05-02"),
-        location: "Texas Inventionworks HQ at EER 1.602", 
-        details: `First project meeting happening!`,
-        type: `Project Meeting`,
-        image: "",
-    },
-
-    {
-        id: 6,
-        name: "Sample Event 6",
-        date: new Date("2024-05-10"),
-        location: "BUR 320", 
-        details: `Second guest speaker talk of the semester!`,
-        type: `Guest Speaker Talk`,
-        image: "",
+        image: "/src/assets/events/General Meeting with Dr. Jose Del R. Milan.png",
     }
 
 ];
