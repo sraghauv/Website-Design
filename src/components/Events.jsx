@@ -3,48 +3,60 @@ import { useState, useEffect } from 'react';
 import Filter from './Filter';
 import EventsDisplay from './EventsDisplay';
 import eventsData from './eventsData';
+
+console.log(`Loaded eventsData:`, eventsData);
+
 import SponsorWidget from './SponsorWidget';
 
 const Events = () => {
-  const [filter, setFilter] = useState('all');
-  const [filteredEvents, setFilteredEvents] = useState(eventsData);
+    const [filter, setFilter] = useState('all');
+    const [filteredEvents, setFilteredEvents] = useState(eventsData);
 
-  useEffect(() => {
-    const now = new Date();
-    const filtered = (() => {
-      switch (filter) {
-        case 'past':
-          return eventsData.filter((event) => new Date(event.date) < now);
-        case 'upcoming':
-          return eventsData.filter((event) => new Date(event.date) >= now);
-        case 'project':
-          return eventsData.filter((event) => event.type === 'Project Meeting');
-        case 'general':
-          return eventsData.filter((event) => event.type === 'General Meeting');
-        case 'guest':
-          return eventsData.filter((event) => event.type === 'Guest Speaker Talk');
-        case 'social':
-          return eventsData.filter((event) => event.type === 'Social Event');
-        default:
-          return eventsData;
-      }
-    })();
+    useEffect(() => {
+        const now = new Date();
 
-    console.log(`Filtered events:`, filtered);
+        console.log(`Current filter:`, filter);
 
-    setFilteredEvents(filtered);
-  }, [filter]);
+        const filtered = (() => {
+        switch (filter) {
+            case 'past':
+            return eventsData.filter((event) => new Date(event.date) < now);
+            case 'upcoming':
+            return eventsData.filter((event) => new Date(event.date) >= now);
+            case 'project':
+            return eventsData.filter((event) => event.type === 'Project Meeting');
+            case 'general':
+            return eventsData.filter((event) => event.type === 'General Meeting');
+            case 'guest':
+            return eventsData.filter((event) => event.type === 'Guest Speaker Talk');
+            case 'social':
+            return eventsData.filter((event) => event.type === 'Social Event');
+            default:
+            return eventsData;
+        }
+        })();
 
-  return (
-    <div>
-      <div className="events-page min-h-screen bg-gray-100 flex flex-col items-center">
-        <h1 className="text-4xl font-bold text-blue-600">Longhorn Neurotech Events</h1>
-        <Filter setFilter={setFilter} />
-        <EventsDisplay events={filteredEvents} />
-      </div>
-      <SponsorWidget /> {/* Events page footer shows all LHNT sponsors! */}
-    </div>
-  );
+        console.log(`Filtered events:`, filtered);
+
+        setFilteredEvents(filtered);
+    }, [filter]);
+
+    return (
+        <>
+        {/* Displays main content of Events page: the events! */}
+        <div className="events-page min-h-screen bg-gray-100 flex flex-col items-center pt-20 pb-4">
+            <h1 className="text-4xl font-bold text-blue-600 text-center">See Events From Longhorn Neurotech!</h1>
+            <div className="flex flex-row items-center justify-between w-[90%] mt-4 mb-2">
+                <h2 className="text-3xl font-bold text-blue-600">Events</h2>
+                <Filter setFilter={setFilter} />
+            </div>
+            <EventsDisplay events={filteredEvents} />
+        </div>
+
+        {/* Events page footer shows all LHNT sponsors! */}
+        <SponsorWidget /> 
+        </>
+    );
 };
 
 export default Events;
