@@ -1,0 +1,1 @@
+// Event component for the Events page

@@ -1,0 +1,1 @@
+// Filter component for the Events page

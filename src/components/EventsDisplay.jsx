@@ -1,0 +1,1 @@
+// EventsDisplay component for the Events page
