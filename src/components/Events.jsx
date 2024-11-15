@@ -1,15 +1,14 @@
-import React from "react";
 import SponsorsWidget from "./SponsorWidget";
 
-const Projects = () => {
+const Events = () => {
   return (
     <div>
       <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold text-blue-600">Projects Page</h1>
+        <h1 className="text-4xl font-bold text-blue-600">Events Page</h1>
       </div>
       <SponsorsWidget />
     </div>
   );
 };
 
-export default Projects;
+export default Events;
