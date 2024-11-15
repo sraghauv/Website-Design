@@ -1,6 +1,12 @@
 // Filter component for the Events page
 import PropTypes from 'prop-types';
 
+/*
+    Creates a new Filter button to display on the Events
+    page where the user can choose a specfic criteria
+    and helps automatically updates the Events page
+    to display all the events that match that criteria!
+*/
 const Filter = ({ setFilter }) => {
   const handleFilterChange = (event) => {
     setFilter(event.target.value);
