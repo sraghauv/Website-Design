@@ -20,19 +20,19 @@ const Events = () => {
         const filtered = (() => {
         switch (filter) {
             case 'past':
-            return eventsData.filter((event) => new Date(event.date) < now);
+                return eventsData.filter((event) => new Date(event.date) < now);
             case 'upcoming':
-            return eventsData.filter((event) => new Date(event.date) >= now);
+                return eventsData.filter((event) => new Date(event.date) >= now);
             case 'project':
-            return eventsData.filter((event) => event.type === 'Project Meeting');
+                return eventsData.filter((event) => event.type === 'Project Meeting');
             case 'general':
-            return eventsData.filter((event) => event.type === 'General Meeting');
+                return eventsData.filter((event) => event.type === 'General Meeting');
             case 'guest':
-            return eventsData.filter((event) => event.type === 'Guest Speaker Talk');
+                return eventsData.filter((event) => event.type === 'Guest Speaker Talks');
             case 'social':
-            return eventsData.filter((event) => event.type === 'Social Event');
+                return eventsData.filter((event) => event.type === 'Social Event');
             default:
-            return eventsData;
+                return eventsData;
         }
         })();
 
