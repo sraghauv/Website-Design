@@ -7,6 +7,9 @@ export default {
         secondary: "#FFF8D6", // Replace with your desired secondary color hex code
         tertiary: "#FFF0C2",
       },
+      fontFamily: {
+        anton: ['"Anton"', 'sans-serif'],
+      }
     },
   },
   plugins: [],
