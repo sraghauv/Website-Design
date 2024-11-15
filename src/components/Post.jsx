@@ -1,0 +1,1 @@
+// Post component for the Events page
