@@ -22,7 +22,7 @@ const Event = ({ event }) => {
                 alt={`${name} image`} 
                 className="event-image w-full h-50 object-contain rounded mb-4" 
             />
-            <div>
+            <div className="flex flex-col flex-wrap flex-auto">
                 <h2 className="text-2xl font-bold mb-2">{name}</h2>
                 <p className="mb-2 text-base">{details}</p>
                 <p className="text-lg"><strong>Date:</strong> {new Date(date).toLocaleDateString()}</p>
