@@ -33,9 +33,23 @@ const eventsData = [
         name: "General Meeting Featuring Dr. Jose Del R. Milan",
         date: new Date("2024-10-21"),
         location: "Burdine Hall 108",
-        details: `Synapse will be hosting Dr. Jose del R Millan tomorrow! He’ll be giving a talk from 6-7PM in BUR 108 on his journey and his work in the exciting field of Brain Computing Interface! All are welcome, no RSVP or anything. Our very own Tony Chae will also host our Journal Club presentation.`,
+        details: `Synapse is hosting Dr. Jose del R Millan in this general meeting! He’ll be giving a talk on his journey and his work in the exciting field of Brain Computing Interface from 6-7PM at the scheduled date and location! All are welcome, no RSVP or anything. Our very own Tony Chae will also host their Journal Club presentation in this general meeting too!`,
         type: `General Meeting`,
         image: "/src/assets/events/General Meeting with Dr. Jose Del R. Milan.png",
+    },
+
+    {
+        id: 2,
+        name: "Longhorn Neurotech x Sypnase Future of Neural Engineering Forum",
+        date: new Date("2024-11-18"),
+        location: "Welch Hall 2.224, University of Texas at Austin",
+        details: `This forum will feature seven interdisciplinary panels led by esteemed professors 
+            from neuroscience, computer science, philosophy, physics, arts, and medical fields! There will
+            be thought-provoking discussions on Brain hacking & Ethics, Direct brain-to-brain communication, 
+            False memory implantation, and Brain Organoids and Human-AI co-evolution. Please make a registration at
+            this link https://form.jotform.com/243048038506151 and join us at 7:00 PM - 9:00 PM at the scheduled date!`,
+        type: `Guest Speaker Talks`,
+        image: "/src/assets/events/Longhorn Neurotech + Synapse Guest Speaker Panel.png",
     }
 
 ];
