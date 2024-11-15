@@ -41,6 +41,12 @@ const Navbar = () => {
               Projects
             </Link>
             <Link 
+              to="/events" 
+              className="text-2xl px-4 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
+            >
+              Events
+            </Link>
+            <Link 
               to="/contact" 
               className="text-2xl px-4 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
             >
@@ -85,6 +91,13 @@ const Navbar = () => {
               onClick={() => setIsOpen(false)}
             >
               Projects
+            </Link>
+            <Link 
+              to="/events" 
+              className="text-xl py-3 px-4 hover:bg-gray-100 rounded-md transition-colors duration-200 text-primary"
+              onClick={() => setIsOpen(false)}
+            >
+              Events
             </Link>
             <Link 
               to="/contact" 
