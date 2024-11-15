@@ -44,10 +44,10 @@ const Events = () => {
     return (
         <>
         {/* Displays main content of Events page: the events! */}
-        <div className="events-page min-h-screen bg-gray-100 flex flex-col items-center pt-20 pb-4">
-            <h1 className="text-4xl font-bold text-blue-600 text-center">See Events From Longhorn Neurotech!</h1>
+        <div style={{backgroundColor: `#BF5801`}} className="events-page min-h-screen flex flex-col items-center pt-20 pb-4">
+            <h1 style={{color: `#FFF8D6`}} className="text-4xl font-bold text-center pt-3">See Events From Longhorn Neurotech!</h1>
             <div className="flex flex-row items-center justify-between w-[90%] mt-4 mb-2">
-                <h2 className="text-3xl font-bold text-blue-600">Events</h2>
+                <h2 style={{color: `#FFF8D6`}} className="text-3xl font-bold">Events</h2>
                 <Filter setFilter={setFilter} />
             </div>
             <EventsDisplay events={filteredEvents} />
