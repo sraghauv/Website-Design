@@ -81,13 +81,7 @@ const Navbar = () => {
             >
               About Us
             </Link>
-            <Link
-              to="/projects"
-              className="text-xl py-3 px-4 hover:bg-gray-100 rounded-md transition-colors duration-200 text-primary"
-              onClick={() => setIsOpen(false)}
-            >
-              Projects
-            </Link>
+
             <Link
               to="/events"
               className="text-xl py-3 px-4 hover:bg-gray-100 rounded-md transition-colors duration-200 text-primary"
