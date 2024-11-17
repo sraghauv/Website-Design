@@ -8,7 +8,7 @@ const SponsorsWidget = () => {
       <div className="flex flex-wrap justify-center gap-16 mt-4 mb-4">
         {/* Replace these divs with sponsor images */}
 
-        <Link to="https://santacruzlab.org/" className="h-32 w-64">
+        <Link to="https://santacruzlab.org/" className="h-32 w-64 ">
           <img
             src="src/assets/scl.png"
             alt="Santa Cruz Lab"
@@ -16,7 +16,7 @@ const SponsorsWidget = () => {
           />
         </Link>
 
-        <Link to="https://cockrell.utexas.edu/" className="w-1/4 mt-8">
+        <Link to="https://cockrell.utexas.edu/" className="w-1/4 mt-10">
           <img
             src="src/assets/cse.svg"
             alt="Crockell School of Engineering"
@@ -24,7 +24,7 @@ const SponsorsWidget = () => {
           />
         </Link>
 
-        <Link to="https://neurotechx.com/" className="w-1/6 mt-8">
+        <Link to="https://neurotechx.com/" className="w-1/6 mt-10">
           <img
             src="src/assets/ntx.png"
             alt="NeuroTechX"
@@ -34,7 +34,7 @@ const SponsorsWidget = () => {
 
         <Link
           to="https://inventionworks.engr.utexas.edu/about"
-          className="w-1/12 mt-8"
+          className="w-1/12 mt-10"
         >
           <img
             src="src/assets/tiw.svg"

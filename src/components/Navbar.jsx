@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Logo from "/src/assets/Picture1.png";
-import { Menu, X } from 'lucide-react';
+import { Menu, X } from "lucide-react";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,39 +15,34 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 h-full">
         <div className="flex justify-between items-center h-full">
           {/* Logo/Home Link */}
-          <Link 
-            to="/" 
+          <Link
+            to="/"
             className="flex items-center hover:opacity-80 transition-opacity duration-200"
           >
             <img
               src={Logo}
-              className="w-20 h-auto"
+              className="w-24 h-auto"
               alt="Longhorn Neurotech Logo"
             />
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex space-x-8">
-            <Link 
-              to="/about" 
+          <div className="hidden md:flex space-x-4">
+            <Link
+              to="/about"
               className="text-2xl px-4 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
             >
               About Us
             </Link>
-            <Link 
-              to="/projects" 
-              className="text-2xl px-4 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
-            >
-              Projects
-            </Link>
-            <Link 
-              to="/events" 
+
+            <Link
+              to="/events"
               className="text-2xl px-4 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
             >
               Events
             </Link>
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className="text-2xl px-4 py-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
             >
               Contact
@@ -55,52 +50,53 @@ const Navbar = () => {
           </div>
 
           {/* Mobile Menu Button */}
-          <button 
+          <button
             className="md:hidden p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
             onClick={toggleMenu}
             aria-label="Toggle menu"
           >
-            {isOpen ? 
-              <X size={24} className="text-primary" /> : 
+            {isOpen ? (
+              <X size={24} className="text-primary" />
+            ) : (
               <Menu size={24} className="text-primary" />
-            }
+            )}
           </button>
         </div>
 
         {/* Mobile Navigation */}
-        <div 
+        <div
           className={`md:hidden absolute left-0 right-0 bg-white border-b border-gray-200 shadow-md transition-all duration-300 ${
-            isOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+            isOpen ? "opacity-100 visible" : "opacity-0 invisible"
           }`}
           style={{
-            transform: isOpen ? 'translateY(0)' : 'translateY(-100%)',
-            top: '80px'
+            transform: isOpen ? "translateY(0)" : "translateY(-100%)",
+            top: "80px",
           }}
         >
           <div className="flex flex-col p-4 space-y-2">
-            <Link 
-              to="/about" 
+            <Link
+              to="/about"
               className="text-xl py-3 px-4 hover:bg-gray-100 rounded-md transition-colors duration-200 text-primary"
               onClick={() => setIsOpen(false)}
             >
               About Us
             </Link>
-            <Link 
-              to="/projects" 
+            <Link
+              to="/projects"
               className="text-xl py-3 px-4 hover:bg-gray-100 rounded-md transition-colors duration-200 text-primary"
               onClick={() => setIsOpen(false)}
             >
               Projects
             </Link>
-            <Link 
-              to="/events" 
+            <Link
+              to="/events"
               className="text-xl py-3 px-4 hover:bg-gray-100 rounded-md transition-colors duration-200 text-primary"
               onClick={() => setIsOpen(false)}
             >
               Events
             </Link>
-            <Link 
-              to="/contact" 
+            <Link
+              to="/contact"
               className="text-xl py-3 px-4 hover:bg-gray-100 rounded-md transition-colors duration-200 text-primary"
               onClick={() => setIsOpen(false)}
             >

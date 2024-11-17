@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
-import { Home, About, Contact, Navbar, Projects, Events } from "./components";
+import { Home, About, Contact, Navbar, Events } from "./components";
 import "./index.css"; // Ensure this line is present at the top of your entry file
 
 const App = () => {
@@ -16,7 +16,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/projects" element={<Projects />} />
+            {/* <Route path="/projects" element={<Projects />} /> */}
             <Route path="/events" element={<Events />} />
           </Routes>
         </div>
