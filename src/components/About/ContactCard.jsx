@@ -4,7 +4,7 @@ import "./ContactCard.css"
 const ContactCard = ({ name, title, img, styleClass, linkedin, children }) => {
   return (
     <div className="card">
-      <div className="margin-right w3-left">
+      <div className="pfp-circle margin-right w3-left">
         <img src={img} alt={`${img}`} className={styleClass} />
       </div>
       <div>
