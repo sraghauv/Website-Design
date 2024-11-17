@@ -1,8 +1,7 @@
 /* Events page */
 import { useState, useEffect } from 'react';
-import Filter from './Filter';
-import EventsDisplay from './EventsDisplay';
-import eventsData from './eventsData';
+import eventsData from './Events/eventsData';
+import { EventsDisplay, Filter } from './Events/events';
 
 console.log(`Loaded eventsData:`, eventsData);
 
