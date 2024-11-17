@@ -36,6 +36,7 @@
     overflow: hidden;
     border-radius: 50%;
     margin-bottom: 20px;
+    margin-right: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,3 +54,16 @@
     align-items: center;
     justify-content: center;
 } */
+
+
+.holland{
+    width: 180px;
+    height: 180px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
