@@ -5,7 +5,7 @@ import "./OfficerSection.css"
 
 const OfficerSection = () => {
   return (
-    <div id="officers">
+    <div className="officers">
       <ExecutiveOfficers />
       <LeadershipTeam />
     </div>

@@ -21,17 +21,17 @@ const Home = () => {
 
   return (
     <div className="w-full overflow-x-hidden">
-      {/* Hero Section with Brain GIF - increased height to 70vh */}
+      {/* Hero Section with Brain GIF */}
       <div className="w-full h-[70vh] mt-16 bg-black relative">
         {/* Container for centered content with max width */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative h-full max-w-6xl w-full mx-auto"> {/* Increased max-width */}
+          <div className="relative h-full max-w-6xl w-full mx-auto">
             <img
               src={brainGif}
               alt="Brain Animation"
               className="h-full w-auto object-contain mx-auto"
               style={{
-                filter: 'brightness(0.9)' // Slightly dim the image
+                filter: 'brightness(0.9)'
               }}
             />
             {/* Gradient overlays for blending */}
@@ -104,9 +104,32 @@ const Home = () => {
         </div>
       </div>
 
-      
-      {/* Projects Section */}
+      {/* Mission Section */}
       <div className="bg-gray-100 py-20 px-4 md:px-8">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={inView ? { opacity: 1 } : {}}
+          transition={{ duration: 0.8 }}
+          className="max-w-7xl mx-auto"
+        >
+          <h2 className="text-4xl font-bold text-primary mb-8 text-center">
+            Our Mission
+          </h2>
+          <p className="text-lg bg-tertiary p-6 rounded-2xl shadow-lg max-w-4xl mx-auto">
+            In addition to competition, we take education seriously. Our
+            club is dedicated to creating and curating educational content that
+            ensures a deep understanding of neural engineering concepts. We
+            believe that a strong foundation is crucial for your growth in this
+            complex field. Furthermore, we understand the significance of
+            networking. Longhorn Neurotech provides opportunities to connect
+            with guest speakers who are established professionals in neural
+            engineering.
+          </p>
+        </motion.div>
+      </div>
+
+      {/* Projects Section */}
+      <div className="bg-gray-50 py-20 px-4 md:px-8">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}}
@@ -119,29 +142,6 @@ const Home = () => {
           <div className="mb-20">
             <Carousel />
           </div>
-        </motion.div>
-      </div>
-
-      {/* Mission Section */}
-      <div className="py-20 px-4 md:px-8 max-w-7xl mx-auto">
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={inView ? { opacity: 1 } : {}}
-          transition={{ duration: 0.8 }}
-        >
-          <h2 className="text-4xl font-bold text-primary mb-8 text-center">
-            Our Mission
-          </h2>
-          <p className="text-lg bg-tertiary p-6 rounded-2xl shadow-lg">
-            In addition to competition, we take education seriously. Our
-            club is dedicated to creating and curating educational content that
-            ensures a deep understanding of neural engineering concepts. We
-            believe that a strong foundation is crucial for your growth in this
-            complex field. Furthermore, we understand the significance of
-            networking. Longhorn Neurotech provides opportunities to connect
-            with guest speakers who are established professionals in neural
-            engineering.
-          </p>
         </motion.div>
       </div>
 
