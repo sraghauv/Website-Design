@@ -5,7 +5,7 @@ import "./LeadershipTeam.css"
 const LeadershipTeam = () => {
   return (
     <div className="content">
-      <h2 className="margin-top">Leadership Team</h2>
+      <h2 className="margin-top about-title">Leadership Team</h2>
       {/* Left Side */}
       <div className="half">
         <ContactCard name="Julian Weaver" title="R&D Lead" img="src/components/About/OfficerImages/julian-weaver.jpeg" styleClass="pfp-circle julian" linkedin="https://www.linkedin.com/in/julian-weaver">
