@@ -9,8 +9,8 @@ const CarouselComponent = () => {
 
   const slides = [
     {
-      type: 'video',
-      src: '/src/assets/BrainPong.mp4',
+      type: 'videoLink',
+      url: 'https://youtu.be/zHFV1OunXrM?feature=shared',
       thumbnail: '/src/assets/BCIpong.jpg',
       title: 'Neural Engineering',
       description: 'Advancing the frontiers of brain-computer interfaces'
@@ -29,9 +29,16 @@ const CarouselComponent = () => {
     }
   ];
 
+  const handleVideoClick = (url, e) => {
+    e.stopPropagation();
+    window.open(url, '_blank');
+  };
+
   const toggleFullscreen = (index) => {
-    setActiveSlide(index);
-    setIsFullscreen(!isFullscreen);
+    if (slides[index].type !== 'videoLink') {
+      setActiveSlide(index);
+      setIsFullscreen(!isFullscreen);
+    }
   };
 
   return (
@@ -94,17 +101,17 @@ const CarouselComponent = () => {
                 className="relative w-full h-[600px] cursor-pointer overflow-hidden rounded-2xl"
                 onClick={() => toggleFullscreen(index)}
               >
-                {slide.type === 'video' ? (
+                {slide.type === 'videoLink' ? (
                   <>
-                    <video
+                    <img
                       className="w-full h-full object-cover"
-                      poster={slide.thumbnail}
-                      onClick={(e) => e.stopPropagation()}
+                      src={slide.thumbnail}
+                      alt={slide.title}
+                    />
+                    <div 
+                      className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/60 rounded-full w-20 h-20 flex items-center justify-center transition-transform hover:scale-110"
+                      onClick={(e) => handleVideoClick(slide.url, e)}
                     >
-                      <source src={slide.src} type="video/mp4" />
-                      Your browser does not support the video tag.
-                    </video>
-                    <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-black/60 rounded-full w-20 h-20 flex items-center justify-center transition-transform hover:scale-110">
                       <svg viewBox="0 0 24 24" fill="white" className="w-14 h-14">
                         <path d="M8 5v14l11-7z"/>
                       </svg>
@@ -136,22 +143,11 @@ const CarouselComponent = () => {
           >
             ✕
           </button>
-          {slides[activeSlide].type === 'video' ? (
-            <video
-              className="max-h-screen max-w-screen"
-              controls
-              autoPlay
-              src={slides[activeSlide].src}
-            >
-              Your browser does not support the video tag.
-            </video>
-          ) : (
-            <img
-              className="max-h-screen max-w-screen object-contain"
-              src={slides[activeSlide].src}
-              alt={slides[activeSlide].title}
-            />
-          )}
+          <img
+            className="max-h-screen max-w-screen object-contain"
+            src={slides[activeSlide].src}
+            alt={slides[activeSlide].title}
+          />
         </div>
       )}
     </>
