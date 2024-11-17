@@ -1,5 +1,5 @@
 import Navbar from "./Navbar";
-import About from "./About";
+import About from "./About/About";
 import Contact from "./Contact";
 import Home from "./Home";
 
