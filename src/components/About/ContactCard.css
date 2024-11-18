@@ -8,7 +8,7 @@
 
 .card:hover {
     transform: scale(100%) translate3d(0,0px,20px);
-    background-color: rgba(111,136,174, 0.3);
+    background-color: rgb(255, 255, 255);
   }
 
 .card .text {
@@ -59,6 +59,7 @@
 .holland{
   transform: scale(1.5);
   object-position: center 35%;
+  background-color: #BF5700;
 }
 
 .alan{

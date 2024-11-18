@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <div className="w-full overflow-x-hidden">
       {/* Hero Section with Brain GIF */}
-      <div className="w-full h-[70vh] mt-16 bg-black relative">
+      <div className="w-full h-[70vh] bg-black relative">
         {/* Container for centered content with max width */}
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="relative h-full max-w-6xl w-full mx-auto">

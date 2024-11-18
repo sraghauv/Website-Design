@@ -1,12 +1,9 @@
 import React from "react";
-//import SponsorsWidget from "./SponsorWidget";
 import './Contact.css'
 import Swal from 'sweetalert2'
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
-
 const Contact = () => {
-
     const onSubmit = async (event) => {
         event.preventDefault();
         const formData = new FormData(event.target);
@@ -37,8 +34,34 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact">
-            <form onSubmit={onSubmit}>
+        <section className="contact" style={{ backgroundColor: '#BF5700' }}>
+            {/* Social Media Icons */}
+            <div className="social-media" style={{
+                marginBottom: '2rem',
+                display: 'flex',
+                justifyContent: 'center',
+                gap: '2rem',
+                paddingTop: '2rem'
+            }}>
+                <a 
+                    href="https://www.linkedin.com/company/lhneurotech/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{ color: '#FFF8D6', fontSize: '2rem' }}
+                >
+                    <FaLinkedin className="social-icon" />
+                </a>
+                <a 
+                    href="https://www.instagram.com/lhneurotech/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    style={{ color: '#FFF8D6', fontSize: '2rem' }}
+                >
+                    <FaInstagram className="social-icon" />
+                </a>
+            </div>
+
+            <form onSubmit={onSubmit} style={{ backgroundColor: 'white', borderRadius: '10px' }}>
                 <h2>Contact Us</h2>
                 <div className="input-box">
                     <label>Full Name</label>
@@ -54,16 +77,6 @@ const Contact = () => {
                 </div>
                 <button type="submit">Send Message</button>
             </form>
-
-            <div className="social-media">
-                <a href="https://www.linkedin.com/company/lhneurotech/" target="_blank" rel="noopener noreferrer">
-                    <FaLinkedin className="social-icon" />
-                </a>
-                <a href="https://www.instagram.com/lhneurotech/" target="_blank" rel="noopener noreferrer">
-                    <FaInstagram className="social-icon" />
-                </a>
-            </div>
-
         </section>
     );
 };
