@@ -17,8 +17,8 @@ const LeadershipTeam = () => {
         <ContactCard name="Debarghya" title="VP of Finance" img="src/components/About/OfficerImages/Chaki.jpg" styleClass="pfp debarghya" linkedin="https://www.linkedin.com/in/dchaki">
           Debarghya is a part of the class of 2026 studying Biomedical Engineering and also pursuing Computational Science and Engineering as well as Scientific Computation and Data Sciences. He works in the Dynamic Medical Engineering and Computing lab, with projects including machine learning based segmentation of echocardiograms and Identification of biomechanical material parameters of lung tissue derived from CT. He enjoys working and volunteering as an EMT as well as reading.
         </ContactCard>
-        <ContactCard name="Tarun Dasari" title="VP of Operations" img="src/components/About/OfficerImages/Tarun_Desari.jpg" styleClass="pfp tarun" linkedin="https://www.linkedin.com/in/tsdasari/">
-          Placeholder text
+        <ContactCard name="Tarun Dasari" title="VP of Operations" img="src/components/About/OfficerImages/Tarun_Dasari.jpg" styleClass="pfp tarun" linkedin="https://www.linkedin.com/in/tsdasari/">
+          Tarun Dasari is our Vice President of Operations for Longhorn Neurotech, whose contributions helps make Longhorn Neurotech run smoothly among all Longhorn Neurotech members. He is the guy to reach out if you have any improvements and feedback to share about Longhorn Neurotech. 
         </ContactCard>
       </div>
 
