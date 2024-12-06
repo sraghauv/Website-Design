@@ -11,7 +11,7 @@ body {
     background: transparent;
     vertical-align: baseline;
     text-align: center;
-    color: #FFEBAD;
+    color: #FFF8D6;
   }
 
   #about {
@@ -69,6 +69,11 @@ body {
     max-width: 200px;
     height: auto;
     margin: 0 20px;
+  }
+
+  #about p {
+    color: #FFF8D6;
+    font-size: 1.3em;
   }
   
   /* Responsive Design */
