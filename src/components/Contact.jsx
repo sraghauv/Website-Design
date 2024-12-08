@@ -34,7 +34,7 @@ const Contact = () => {
     };
 
     return (
-        <section className="contact" style={{ backgroundColor: '#BF5700' }}>
+        <section className="contact" style={{ backgroundColor: '#213C58' }}>
             {/* Social Media Icons */}
             <div className="social-media" style={{
                 marginBottom: '2rem',
@@ -43,17 +43,17 @@ const Contact = () => {
                 gap: '2rem',
                 paddingTop: '2rem'
             }}>
-                <a 
-                    href="https://www.linkedin.com/company/lhneurotech/" 
-                    target="_blank" 
+                <a
+                    href="https://www.linkedin.com/company/lhneurotech/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: '#FFF8D6', fontSize: '2rem' }}
                 >
                     <FaLinkedin className="social-icon" />
                 </a>
-                <a 
-                    href="https://www.instagram.com/lhneurotech/" 
-                    target="_blank" 
+                <a
+                    href="https://www.instagram.com/lhneurotech/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     style={{ color: '#FFF8D6', fontSize: '2rem' }}
                 >
